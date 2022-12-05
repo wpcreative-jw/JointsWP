@@ -1,20 +1,38 @@
 <?php
 /**
- * The main template file
+ * Displays archive pages if a speicifc template is not set. 
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
+ * For more info: https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
 
 get_header(); ?>
-			
-	<div class="content">
+
+
+<div class="hero-image bg-greylines">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <div class="medium-6 large-8 cell">
+                <div class="home-title curve">
+                    <h1>Blog</h1>
+                    <p>Our blog will consist of news, updates and anything else that will be useful for you.</p>
+                </div>
+            </div>
+            <div class="medium-6 large-4 cell">
+                <div class="home-phone og curve">
+                    <p>Get in touch with us today</p>
+                    <p class="home-tel"><a href="tel:08005878003">0800 5878003</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="blogs">
+	<div class="grid-container">
 	
-		<div class="inner-content grid-x grid-margin-x grid-padding-x">
+		<div class="grid-x grid-padding-x" data-equalizer>
 	
-		    <main class="main small-12 medium-8 large-8 cell" role="main">
-		    
+
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			 
 					<!-- To see additional archive styles, visit the /parts directory -->
@@ -30,12 +48,11 @@ get_header(); ?>
 						
 				<?php endif; ?>
 																								
-		    </main> <!-- end #main -->
-		    
-		    <?php get_sidebar(); ?>
 
 		</div> <!-- end #inner-content -->
 
 	</div> <!-- end #content -->
+
+</section>
 
 <?php get_footer(); ?>

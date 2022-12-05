@@ -1,0 +1,19 @@
+/************************************************
+
+Stylesheet: Reviews Carousel
+
+*************************************************/
+
+.review {
+    padding: 0 15px;
+    .inner {
+        background-color: #C9D7EB;
+        padding: 60px 30px;
+        min-height: 650px;
+        border-radius: 5px;
+    }
+    .author {
+        color: $white;
+        font-family: "Mont-HeavyDEMO";
+    }
+}

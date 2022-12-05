@@ -1,0 +1,104 @@
+/************************************************
+TYPOGRAPHY
+*************************************************/
+
+.font-light {
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-reg {
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-bold {
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-extra {
+    font-family: montserrat, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    color: $grey;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: $darkblue;
+}
+
+h1 {
+    color: $white;
+    font-size: 45px;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    padding: 0 10px 10px;
+    display: inline-block;
+    border-bottom: solid 5px $green;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    border-bottom: solid 5px $green;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-bottom: 20px;
+}
+
+a {
+    font-weight: 700;
+}
+
+.button {
+    background-color: $green;
+    color: $white;
+    border-radius: 25px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: $lightgreen;
+    color: $darkblue;
+}
+
+.button.white {
+    background-color: $white;
+    color: $darkblue;
+}
+.button.white:hover {
+    background-color: $lightgreen;
+    color: $green;
+}
+

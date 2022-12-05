@@ -1,0 +1,88 @@
+/************************************************
+FOOTER
+*************************************************/
+
+.footer {
+    clear: both;
+    margin-top: 0em;
+}
+
+.footer-top {
+    padding: 50px 0;
+}
+
+.getaquote {
+    border: solid 6px $lightgreen;
+    height: 275px;
+    margin-top: -138px;
+    text-align: center;
+    padding: 30px;
+    h2 {
+        color: $white;
+        border: none;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 30px;
+        color: $white;
+    }
+    input {
+        border: none;
+        height: 46px;
+    }
+}
+
+.footer-middle {
+    padding: 30px 0;
+    color: $green;
+    background-color: $lightgreen;
+    a {
+        color: $green;
+        font-size: 25px;
+        border-right: solid 3px $green;
+        padding: 0px 30px;
+    }
+    ul li:last-child a {
+        border: none;
+    }
+}
+
+
+.footer-bottom {
+    background-color: $darkblue;
+    color: $white;
+}
+
+.fb-top {
+    padding: 70px 0 50px;
+    text-align: center;
+    img {
+        margin-bottom: 50px;
+    }
+}
+
+.fb-bottom {
+    padding-bottom: 20px;
+    a {
+        color: $white;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+#footer-links {
+    font-size: 14px;
+    margin-top: 50px;
+
+    li a {
+        border-right: solid 1px $lightgreen;
+        padding: 0 15px;
+        box-shadow: none;
+    }
+
+    li a:hover {
+        color: $lightgreen;
+    }
+}
+

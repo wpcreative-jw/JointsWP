@@ -30,6 +30,8 @@
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
+		<link rel="stylesheet" href="https://use.typekit.net/thq0jee.css">
+
 		<?php wp_head(); ?>
 
 	</head>

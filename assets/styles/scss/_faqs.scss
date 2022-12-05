@@ -1,0 +1,67 @@
+/************************************************
+
+Stylesheet: FAQs
+
+*************************************************/
+
+.faqs {
+    padding: 100px 0;
+    background-color: lightgray;
+    h2 {
+        margin-bottom: 80px;
+        position: relative;
+    }
+    h2::after {
+        position: absolute;
+        top: -5px;
+        right: -75px;
+        content: "";
+        background-image: url(../images/icon-question.png);
+        background-size: 50px;
+        background-position: right center;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 100px;
+    }
+    .accordion {
+        background: none;
+    }
+    .accordion-item {
+        margin-bottom: 30px;
+    }
+    .accordion-title {
+        position: relative;
+        display: block;
+        padding: 1.25rem 1rem;
+        border: solid 5px $lightgreen !important;
+        font-size: 20px;
+        line-height: 1;
+        background-color: $white;
+        font-weight: 400;
+    }
+    .accordion-content {
+        display: none;
+        padding: 1rem;
+        border: none;
+        color: $white;
+        background-color: $green;
+    }
+    .accordion-title:before {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        margin-top: -20px;
+        content: "";
+        background-image: url(../images/icon-faqarrow.png);
+        background-size: 35px;
+        width: 35px;
+        height: 40px;
+        display: block;
+    }
+    .is-active>.accordion-title:before {
+        transform: rotate(90deg);
+    }
+    :last-child>.accordion-content:last-child {
+        border-bottom: none;
+    }
+}

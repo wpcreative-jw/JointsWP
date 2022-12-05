@@ -48,7 +48,44 @@ function joints_theme_support() {
 	); 
 	
 	// Set the maximum allowed width for any content in the theme, like oEmbeds and images added to posts.
-	$GLOBALS['content_width'] = apply_filters( 'joints_theme_support', 1200 );	
+	$GLOBALS['content_width'] = apply_filters( 'joints_theme_support', 1200 );
+	
+
+	// Add options page
+	if( function_exists('acf_add_options_page') ) {
+	
+		acf_add_options_page(array(
+			'page_title' 	=> 'Theme General Settings',
+			'menu_title'	=> 'Theme Settings',
+			'menu_slug' 	=> 'theme-general-settings',
+		));	
+	}
+
+	if( function_exists('acf_add_options_page') ) {
+	
+		acf_add_options_page(array(
+			'page_title' 	=> 'Theme General Settings',
+			'menu_title'	=> 'Theme Settings',
+			'menu_slug' 	=> 'theme-general-settings',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false
+		));
+		
+		acf_add_options_sub_page(array(
+			'page_title' 	=> 'Theme Header Settings',
+			'menu_title'	=> 'Header',
+			'parent_slug'	=> 'theme-general-settings',
+		));
+		
+		acf_add_options_sub_page(array(
+			'page_title' 	=> 'Theme Footer Settings',
+			'menu_title'	=> 'Footer',
+			'parent_slug'	=> 'theme-general-settings',
+		));
+		
+	}
+
+	add_theme_support( 'align-wide' );
 	
 } /* end theme support */
 

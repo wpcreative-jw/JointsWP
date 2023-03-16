@@ -1,6 +1,7 @@
 /************************************************
 
 Stylesheet: Hero Slider
+Styles for a slider if used
 
 *************************************************/
 
@@ -34,7 +35,7 @@ Stylesheet: Hero Slider
     height: calc(100vh - 0px);
     background-position: center;
     background-size: cover;
-    color: #FFF;
+    color: $white;
 }
 
 .slide-content {

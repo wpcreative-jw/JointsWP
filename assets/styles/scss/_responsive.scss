@@ -1,6 +1,7 @@
 /************************************************
 
 Stylesheet: Responsive
+Styles for mobile devices
 
 *************************************************/
 
@@ -44,7 +45,7 @@ Stylesheet: Responsive
 }
 
 .off-canvas {
-    background: $darkblue;
+    background: $color1;
 
     .menu a {
         padding: 1.5rem;
@@ -64,11 +65,11 @@ Stylesheet: Responsive
     .menu .active>a,
     .menu .is-active>a {
         background: $white;
-        color: $darkblue !important;
+        color: $color1 !important;
     }
 
     .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a:after {
-        border-color: $green transparent transparent;
+        border-color: $color3 transparent transparent;
     }
 }
 
@@ -98,7 +99,7 @@ Stylesheet: Responsive
     }
 
     .mob-header {
-        background-color: $darkblue;
+        background-color: $color1;
         position: fixed;
         top: 0;
         z-index: 10;

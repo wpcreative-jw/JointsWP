@@ -1,34 +1,12 @@
 /************************************************
-TYPOGRAPHY
+Stylesheet: Typography
+Styles for global typography
 *************************************************/
 
-.font-light {
-    font-family: montserrat, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.font-reg {
-    font-family: montserrat, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.font-bold {
-    font-family: montserrat, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.font-extra {
-    font-family: montserrat, sans-serif;
-    font-weight: 800;
-    font-style: normal;
-}
 
 body {
-    color: $grey;
-    font-family: montserrat, sans-serif;
+    color: $color1;
+    font-family: roboto, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -37,38 +15,44 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: montserrat, sans-serif;
+    font-family: roboto-condensed, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: $darkblue;
+    color: $color1;
 }
 
 h1 {
-    color: $white;
-    font-size: 45px;
+    color: $color1;
+    font-size: 82px;
     margin-bottom: 25px;
-    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 1;
 }
 
 
 h2 {
-    font-size: 40px;
-    margin-bottom: 40px;
-    padding: 0 10px 10px;
+    font-size: 42px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px double $color2;
     display: inline-block;
-    border-bottom: solid 5px $green;
 }
 
 h3 {
     font-size: 24px;
     margin-bottom: 30px;
-    border-bottom: solid 5px $green;
-    padding-bottom: 10px;
-    display: inline-block;
+}
+
+h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 p {
     margin-bottom: 20px;
+    line-height: 1.8;
 }
 
 ul {
@@ -77,28 +61,32 @@ ul {
 
 a {
     font-weight: 700;
+    color: $color1;
 }
 
 .button {
-    background-color: $green;
-    color: $white;
-    border-radius: 25px;
+    border: solid 2px $white;
+    background-color: $color2;
+    color: $color1;
+    border-radius: 5px;
     text-transform: uppercase;
     padding: 15px 25px;
     font-weight: 700;
+    font-family: roboto-condensed, sans-serif;
+    font-size: 24px;
 }
 
 .button:hover {
-    background-color: $lightgreen;
-    color: $darkblue;
+    background-color: $white;
+    color: $color1;
 }
 
 .button.white {
     background-color: $white;
-    color: $darkblue;
+    color: $color1;
 }
 .button.white:hover {
-    background-color: $lightgreen;
-    color: $green;
+    background-color: $color2;
+    color: $color1;
 }
 

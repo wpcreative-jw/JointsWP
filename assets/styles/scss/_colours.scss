@@ -1,16 +1,11 @@
 /************************************************
-COLOURS
+Stylesheet: GLOBAL COLOUR PALLETTE 
+DEFINE PRIMARY AND SECONDARY COLOURS
 *************************************************/
 
-$darkblue: #15223B;
-$green: #6D8E77;
-$lightgreen: #E9F4EF;
-$orange: #D64F23;
+$color1: #2C2F7E;
+$color2: #E5EB4B;
+$color3: #52EDBD;
+$color4: #3CE1FF;
+$color5: #DF55E3;
 $white: #FFFFFF;
-$grey: #7B778D;
-$lightgrey: #E9E9EF;
-
-.og {
-    background: rgb(239,138,4);
-    background: linear-gradient(0deg, rgba(239,138,4,1) 0%, rgba(211,76,39,1) 100%);
-}
